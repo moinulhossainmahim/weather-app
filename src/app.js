@@ -30,7 +30,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
   res.render('about', {
     title: 'About me',
-    name: 'Moinul',
+    info: 'This site was created by Moinul Hossain. It uses data from mapbox.com and openweathermap.org',
   });
 });
 
