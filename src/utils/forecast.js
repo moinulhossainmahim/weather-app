@@ -6,12 +6,12 @@ const getForecast = (latitude, longitude, callback) => {
     .then(
       ({
         data: {
-          main: { temp, feels_like },
+          main: { temp, feels_like, temp_min, temp_max },
         },
       }) => {
         callback(
           undefined,
-          `It is currently ${temp} degrees out.But it's feels like ${feels_like}`
+          `It is currently ${temp} degrees out.But it's feels like ${feels_like}. Today's high is ${temp_max} with a low of ${temp_min}`
         );
       }
     )
