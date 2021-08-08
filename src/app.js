@@ -37,7 +37,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
   res.render('help', {
     title: 'Help',
-    message: 'Hey, Welcome to help page!',
+    message: 'Welcome to help page!',
     name: 'Moinul',
   });
 });
